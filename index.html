@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="landing-page">
+        <h1>Ada pesan untukmu! 🎁</h1>
+        <button onclick="bukaHadiah()">Buka Sekarang</button>
+    </div>
+
+    <div class="container hidden" id="main-content">
+        <div class="card">
+            <div class="photo-frame">
+                <img src="foto.jpg" alt="Birthday Person" onerror="this.src='https://via.placeholder.com/150'">
+            </div>
+            
+            <h1 class="title">Selamat Ulang Tahun! 🎉</h1>
+            <h2 class="name">rawrrrr</h2>
+            
+            <p class="message" id="typing-text"></p>
+            
+            <div class="footer">
+                Made with ❤️ for you.
+            </div>
+        </div>
+        
+        <audio id="bg-music" loop>
+            <source src="musik.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
